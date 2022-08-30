@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+  <title>meditation App</title>
+</head>
+
+<body>
+  <div class="page">
+  <header> 
+    <h1> Take Time To Meditate </h1>
+    <p> Press on the buttons with the Trees </p>
+    <span> press pause and play </span>
+  </header>
+ 
+    <div class="vid-container">
+      <video loop>
+        <source src="./video/earth.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="sound-picker">
+      <button data-sound="./sounds/Believe.mp3" data-video="./video/seventh.mp4"><img src="./svg/root.svg"
+          alt=""></button>
+      <button data-sound="./sounds/Radiance.mp3" data-video="./video/sixth.mp4"><img src="./svg/root.svg"
+          alt=""></button>
+      <button data-sound="./sounds/StarryVocals.mp3" data-video="./video/fith.mp4"><img src="./svg/root.svg"
+          alt=""></button>
+      <button data-sound="./sounds/HealingWater.mp3" data-video="./video/fourth.mp4"><img src="./svg/root.svg"
+          alt=""></button>
+      <button data-sound="./sounds/NewHeights.mp3" data-video="./video/third.mp4"><img src="./svg/root.svg"
+          alt=""></button>
+      <button data-sound="./sounds/HopesAndDreams.mp3" data-video="./video/second.mp4"><img src="./svg/root.svg"
+          alt=""></button>
+      <button data-sound="./sounds/DeepMeditation.mp3" data-video="./video/first.mp4"><img src="./svg/root.svg"
+          alt=""></button>
+    </div>
+
+    <div class="player-container">
+      <div class = "video-controller">
+      <audio class="song">
+      </audio>
+      <img src="./svg/play.svg" class="play"></img>
+      <img src="./svg/replayClick.svg" class="replay"></img>
+      <svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20" />
+      </svg>
+
+    </div>
+    <div>
+      <p class="time-display">0:00</p>
+      </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

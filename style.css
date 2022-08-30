@@ -1,0 +1,167 @@
+body {
+  font: normal 100%/1.5 -system-ui, sans-serif;
+  background-color: black;
+}
+header{
+  color: white;
+}
+video {
+  max-width: 100%;
+}
+
+.page {
+  margin:1em auto;
+  max-width: 1280px;
+}
+
+.sound-picker {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.sound-picker button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+}
+
+.player-container{
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.video-controller {
+  position: relative;
+}
+
+.sound-picker button:nth-child(1) {
+  background: #b8b0f5;
+}
+.sound-picker button:nth-child(2) {
+  background: #5f4ad7;
+}
+.sound-picker button:nth-child(3) {
+  background: #377aee;
+}
+.sound-picker button:nth-child(4) {
+  background: #40a558;
+}
+.sound-picker button:nth-child(5) {
+
+  background: #f1df14;
+}
+.sound-picker button:nth-child(6) {
+
+  background: #c85f1e;
+}
+.sound-picker button:nth-child(7) {
+  background: #95062a;
+}
+
+
+.sound-picker button img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+}
+
+
+ .moving-outline{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 333px;
+  top: 35px;
+}
+.play{
+  width: 50px;
+  height: 200px;
+  position:relative;
+  /* left: 50%;
+  top: 50%; */
+  /* margin-left: -25px;
+  margin-top: 50x; */
+} 
+
+.replay {
+  width: 100px;
+  height: 200px;
+  position: relative;
+  margin-left: 70px;
+  /* left: 50%;
+  top: 100%;
+  margin-left: -300px;
+  margin-top: -230px; */
+}
+
+
+.time-display {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  margin-top: 50px;
+}
+
+
+
+
+
+@media (max-width:500px) { 
+  .player-container{
+  
+  left: 50%;
+  /* pointer-events: none; */
+  justify-content: space-evenly;
+  margin-bottom: 40%;
+  padding-bottom: 20%;
+  height: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+  }
+
+  .player-container img {
+    /* position: absolute; */
+margin-top: 80%;
+height:40px;
+width: 40px;
+  }
+
+  .time-display {
+    color: rgb(0, 0, 0);
+    position:relative;
+   margin-top: 200px;
+    font-size: 30px;
+  } 
+  
+
+ 
+  .sound-picker {
+    height: 10%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:baseline;
+    flex-direction:row-reverse;
+    flex: 1;
+    margin-right: 10%;
+    margin-top: 100px;
+  }
+.sound-picker button {
+  border: none;
+  height: 50px;
+  width: 50px;
+    margin: 10px; 
+    padding: 10px; 
+    box-sizing: border-box;
+}
+}
+ 
+  
