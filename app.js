@@ -59,10 +59,10 @@ song.ontimeupdate = function () {
 
   let currentTime = song.currentTime;
   // elapsed should say time left
-  let elapsed = Duration - currentTime;
-  let seconds = Math.floor(elapsed % 60);
-  let minutes = Math.floor(elapsed / 60);
-  // console.log(Duration, currentTime, elapsed);
+  let remainingTime = Duration - currentTime;
+  let seconds = Math.floor(remainingTime % 60);
+  let minutes = Math.floor(remainingTime/ 60);
+  // console.log(Duration, currentTime, remainingTime);
 
 
   timeDisplay.textContent = `${minutes}:${seconds}`;

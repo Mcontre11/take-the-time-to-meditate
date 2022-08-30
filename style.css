@@ -84,10 +84,6 @@ video {
   width: 50px;
   height: 200px;
   position:relative;
-  /* left: 50%;
-  top: 50%; */
-  /* margin-left: -25px;
-  margin-top: 50x; */
 } 
 
 .replay {
@@ -95,10 +91,6 @@ video {
   height: 200px;
   position: relative;
   margin-left: 70px;
-  /* left: 50%;
-  top: 100%;
-  margin-left: -300px;
-  margin-top: -230px; */
 }
 
 
@@ -117,7 +109,6 @@ video {
   .player-container{
   
   left: 50%;
-  /* pointer-events: none; */
   justify-content: space-evenly;
   margin-bottom: 40%;
   padding-bottom: 20%;
@@ -129,7 +120,6 @@ video {
   }
 
   .player-container img {
-    /* position: absolute; */
 margin-top: 80%;
 height:40px;
 width: 40px;
